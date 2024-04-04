@@ -754,6 +754,10 @@ case "foreigners":
 commands[command](client, m, admin, isAdmin, group, botAdmin, isBotAdmin, participants, args, mycode);
 break;
 
+case "add":
+commands[command](client, m, group, botAdmin, isBotAdmin, admin, isAdmin, q, participants, groupMetadata, botname, pushname);
+break;
+
 // general commands
 
 
@@ -825,6 +829,10 @@ break;
 
 case "gpt":
 commands[command](client, m, text, sendd);
+break;
+
+case "imagine":
+commands[command](client, m, text);
 break;
 
 case "ai":
@@ -927,6 +935,7 @@ break;
 
 case "getvar":
 commands[command](client, m, text, Owner, NotOwner, herokuapi, appname);
+
 
 
 break;
